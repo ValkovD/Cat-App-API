@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+
+    button {
+      width: 150px;
+      height: 50px;
+      background-color: skyblue;
+      border-radius: 5px;
+      font-size: large;
+      margin-bottom: 10px;
+    }
+
+    #reset {
+      background-color: rgb(190, 39, 39);
+      font-weight: bolder;
+    }
+
+    #reset:hover {
+      width: 180px;
+      height: 70px;
+    }
+
+    input {
+      width: 250px;
+      height: 50px;
+      border-radius: 5px;
+      display: block;
+      margin-bottom: 10px;
+      font-size: large;
+    }
+
+    select {
+      width: 70px;
+      height: 50px;
+      border-radius: 5px;
+      font-size: large;
+    }
+
+    button:hover {
+      background-color: lightcyan
+    }
+  </style>
+  <title>XMLHttpRequest Practise</title>
+</head>
+
+<body>
+  <h1>Cat Buttons</h1>
+  <h3>Press button and cat picture or text will show,</h3>
+  <h3>some buttons will requre to put text or choose size and color</h3>
+  <h3 style="color: red;">За тези които не четат вносни езици ПРЕВОД:</h3>
+  <h3 style="color: red;">Натисни бутон за да видиш котето</h3>
+  <h3 style="color: red;">На някои бутонни им трябва текст иначе дават грешка</h3>
+  <div class="container">
+    <div>
+      <label for="image size">Image Size</label>
+      <select name="image size" id="image-size">
+        <option value="20">20</option>
+        <option value="40">40</option>
+        <option value="60">60</option>
+        <option value="80">80</option>
+        <option value="100">100</option>
+        <option value="120">120</option>
+        <option value="140">140</option>
+        <option value="160">160</option>
+        <option value="180">180</option>
+        <option value="200">200</option>
+        <option value="220">220</option>
+        <option value="240">240</option>
+        <option value="260">260</option>
+        <option value="300">300</option>
+        <option value="350">350</option>
+        <option value="400">400</option>
+        <option value="450">450</option>
+        <option value="500">500</option>
+        <option value="600">600</option>
+      </select>
+      <button id="cat-customized-size">Cat Customized</button>
+    </div>
+    <input style="display: inline;" type="text" placeholder="type text and press the button">
+    <button id="random-pic-txt">Cat With TEXT</button>
+    <div>
+      <input id="custom-input" style="display: inline;" type="text" placeholder="type text">
+      <label for="text size">Text Size</label>
+      <select name="text size" id="text-size">
+        <option value="20">20</option>
+        <option value="40">40</option>
+        <option value="60">60</option>
+        <option value="80">80</option>
+        <option value="100">100</option>
+      </select>
+      <label for="color">Color</label>
+      <select name="color" id="color">
+        <option value="white">white</option>
+        <option value="black">black</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+        <option value="orange">ornage</option>
+        <option value="red">red</option>
+        <option value="gray">gray</option>
+      </select>
+      <button id="cat-customized">Cat Customized</button>
+    </div>
+    <button id="all-tags">Get All cat tags</button>
+    <button id="cute-tags">Get All Cute cats </button>
+    <button id="random-pic">Get Cat Picrure </button>
+    <button id="random-gif">Get Cat Gif </button>
+    <button id="random-pic-filter">Cat Pic Filtered </button>
+
+    <button id="reset">RESET</button>
+    <ul>
+
+    </ul>
+    <div id="picture">
+
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+
+</html>
